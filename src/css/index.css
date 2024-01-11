@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root{
+    --cor-letra-preta: #0000;
+    --cor-letra-branca: #ffff;
+    --cor-base: #f2f4f5;
+    --cor-fundo-secundario: #6fadea;
+    --cor-fundo-terciario: #0652a7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-base);
+}
+
+
+/*REGIÃO DE DEFINIÇÃO DE ESTILO DA SEÇÃO DE APRESENTAÇÃO DO SITE*/
+.containerHeader{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerHeader .containerHeaderImagem{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHeader .containerHeaderImagem img{
+    height: 50%;
+    width: 70%;
+}
+
+.containerHeader .containerHeaderConteudo{
+    height: 100%;
+    width: 55%;
+    background-color: var(--cor-fundo-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHeader .containerHeaderConteudo .containerTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-left: 3%;
+}
+
+.containerHeader .containerHeaderConteudo .containerTexto h1{
+    color: var(--cor-letra-branca);
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.containerHeader .containerHeaderConteudo .containerTexto p{
+    color: var(--cor-letra-branca);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    width: 89%;
+}
+
+.containerHeader .containerHeaderConteudo .containerTexto button{
+    cursor: pointer;
+    margin-top: 2vh;
+    width: 50%;
+    height: 4vh;
+    border: solid var(--cor-letra-branca) 1px;
+    color: var(--cor-letra-branca);
+    background-color: transparent;
+    transition: ease-in-out 0.35ms;
+}
+
+.containerHeader .containerHeaderConteudo .containerTexto button:hover{
+    background-color: var(--cor-fundo-terciario);
+    color: var(--cor-letra-branca);
+    border-color: var(--cor-fundo-terciario);
+}
+/*FIM DA REGIÃO*/
+
+/*REGIÃO DA SEÇÃO DE DETALHAMENTO DA EMPRESA*/
+.containerPresentacion{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerPresentacion .containerPresentacionImage{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPresentacion .containerPresentacionImage img{
+    width: 80%;
+    height: 75%;
+}
+
+.containerPresentacion .containerPresentacionConteudo{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.containerPresentacion .containerPresentacionConteudo h1{
+    color: var(--cor-fundo-terciario);
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.containerPresentacion .containerPresentacionConteudo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    width: 75%;
+}
+
+/*FIM DA REGIÃO*/
+
+/*REGIÃO DE CARDS DE ATIVIDADE DA EMPRESA*/
+.containerServices{
+    width: 100%;
+    height: 125vh;
+    background-color: var(--cor-fundo-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerServices .containerCardActivity{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+
+.containerServices .containerCardActivity .card{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    background-color: var(--cor-letra-branca);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2%;
+}
+
+.containerServices .containerCardActivity .card h1{
+    color: var(--cor-fundo-terciario);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.containerServices .containerCardActivity .card span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    width: 90%;
+}
+
+.containerServices .containerCardActivity .card img{
+    width: 60%;
+    height: 60%;
+    padding: 2vh 2vh;
+}
+/*FIM DA REGIÃO*/
+
+/*REGIÃO DE CLIENTES PARCEIROS DA EMPRESA*/
+.containerClientes{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerClientes h1{
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-fundo-terciario);
+    margin-top: 2%;
+}
+
+.containerClientes .containerClientesImagens{
+    width: 100%;
+    height: 50%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+}
+/*FIM DA REGIÃO*/
+
+/*REGIÃO DO FOOTER DO SITE*/
+.containerFooter{
+    margin-top: 5%;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--cor-fundo-terciario);
+    display: flex;
+    flex-direction: row;
+}
+
+.containerFooter .containerSobre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+}
+
+.containerFooter .containerSobre h1{
+    color: var(--cor-letra-branca);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+    font-size: 25px;
+    padding: 1vh;
+    margin-left: 2%;
+}
+
+.containerFooter .containerSobre p{
+    color: var(--cor-letra-branca);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+    font-size: 15px;
+    padding: 1vh;
+    margin-left: 2%;
+}
+
+.containerFooter .containerContato{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.containerFooter .containerContato h1{
+    color: var(--cor-letra-branca);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerFooter .containerContato p{
+    color: var(--cor-letra-branca);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerFooter .containerLocal{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh
+}
+
+.containerFooter .containerLocal h1{
+    color:  var(--cor-letra-branca);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+/*FIM DA REGIÃO*/
